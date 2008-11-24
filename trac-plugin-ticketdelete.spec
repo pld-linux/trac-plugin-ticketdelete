@@ -43,6 +43,17 @@ cd %{trac_ver}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+if [ "$1" = "1" ]; then
+	%banner -e %{name} <<-'EOF'
+	Don't forget to enable ticketdelete in conf/trac.ini:
+
+	[components]
+	ticketdelete.* = enabled
+EOF
+#' - vim
+fi
+
 %files
 %defattr(644,root,root,755)
 %{py_sitescriptdir}/ticketdelete
