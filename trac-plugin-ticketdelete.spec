@@ -2,7 +2,7 @@
 Summary:	Ticket and Ticket Change Deletion Plugin
 Name:		trac-plugin-ticketdelete
 Version:	0
-Release:	0.1
+Release:	1
 License:	BSD-like
 Group:		Applications/WWW
 # Source0Download:	http://trac-hacks.org/changeset/latest/ticketdeleteplugin?old_path=/&filename=ticketdeleteplugin&format=zip
