@@ -10,6 +10,7 @@ Source0:	ticketdeleteplugin.zip
 # Source0-md5:	5ea5299648bae63f2ac85c2b0af0fe81
 URL:		http://trac-hacks.org/wiki/TicketDeletePlugin
 BuildRequires:	python-devel
+BuildRequires:	unzip
 Requires:	trac >= %{trac_ver}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
