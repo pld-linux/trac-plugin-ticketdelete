@@ -10,16 +10,19 @@ Source0:	ticketdeleteplugin.zip
 # Source0-md5:	5ea5299648bae63f2ac85c2b0af0fe81
 URL:		http://trac-hacks.org/wiki/TicketDeletePlugin
 BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	python-setuptools
+BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
 Requires:	trac >= %{trac_ver}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a small plugin to allow deleting tickets from within Trac. Though I
-don't advocate this as a method of dealing with tickets very often, it is a
-commonly requested feature, and it is needed on rare occasions (generally
-dealing with spam). 
+This is a small plugin to allow deleting tickets from within Trac.
+Though I don't advocate this as a method of dealing with tickets very
+often, it is a commonly requested feature, and it is needed on rare
+occasions (generally dealing with spam).
 
 It also supports deleting individual changes, including comments.
 
